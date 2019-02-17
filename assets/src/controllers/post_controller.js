@@ -17,6 +17,10 @@ export default class extends Controller {
         return ["talks", "content", "preview" ]
     }
 
+    initialize() {
+        this.update();
+    }
+
     content() {
         this.previewTarget.innerHTML = this.contentTarget.value
     }
