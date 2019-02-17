@@ -14,11 +14,28 @@ const database = firebase.database();
 
 export default class extends Controller {
     static get targets() {
-        return [ "content", "preview" ]
+        return ["talks", "content", "preview" ]
     }
 
     content() {
         this.previewTarget.innerHTML = this.contentTarget.value
+    }
+
+    update() {
+        const data = database.ref('ctimulus');
+
+        data.on("value", (snapshot) => {
+            const ctimulus = Object.entries(snapshot.val());
+
+            this.talksTarget.innerHTML = "";
+
+            for (let i = 0; i < ctimulus.length; i++) {
+                this.talksTarget.innerHTML += `<p>${ctimulus[i][1].content}</p>`
+            }
+        }, (error) => {
+            console.log(error);
+        })
+
     }
 
     submit() {

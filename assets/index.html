@@ -5,6 +5,7 @@
         </nav>
         <h1> Ctimulus </h1>
         <div data-controller="post">
+            <div data-target="post.talks"></div>
             <div class="input-group">
                 <div class="input-group-append">
                     <span class="input-group-text">Input talk</span>
@@ -13,7 +14,7 @@
             </div>
             <div data-target="post.preview"></div>
             <p>
-                <button type="button" class="btn btn-primary" data-action="click->post#submit">Submit</button>
+                <button type="button" class="btn btn-primary" data-action="click->post#submit" data-action="click->post#update">Submit</button>
             </p>
         </div>
         <script src="./index.js" type="text/javascript"></script>
