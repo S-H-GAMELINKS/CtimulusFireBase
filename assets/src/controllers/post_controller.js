@@ -26,5 +26,6 @@ export default class extends Controller {
             content: this.contentTarget.value
         });
         this.contentTarget.value = "";
+        this.previewTarget.innerHTML = "";
     }
 }
