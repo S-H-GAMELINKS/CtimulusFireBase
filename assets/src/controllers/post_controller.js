@@ -22,7 +22,7 @@ export default class extends Controller {
     }
 
     submit() {
-        database.ref('ctimuluse').push({
+        database.ref('ctimulus').push({
             content: this.contentTarget.value
         });
         this.contentTarget.value = "";
