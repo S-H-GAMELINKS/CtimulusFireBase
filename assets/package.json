@@ -1,10 +1,11 @@
 {
-    "scripts": {
-      "build": "webpack --display-error-details"
-    },
-    "dependencies": {
-      "stimulus": "^1.1.1",
-      "webpack": "^4.29.4",
-      "webpack-cli": "^3.2.3"
-    }
+  "scripts": {
+    "build": "webpack --display-error-details"
+  },
+  "dependencies": {
+    "firebase": "^5.8.3",
+    "stimulus": "^1.1.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
   }
+}
