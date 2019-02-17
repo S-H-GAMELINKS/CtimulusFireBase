@@ -3,6 +3,7 @@
     "build": "webpack --display-error-details"
   },
   "dependencies": {
+    "dotenv-webpack": "^1.7.0",
     "firebase": "^5.8.3",
     "stimulus": "^1.1.1",
     "webpack": "^4.29.4",
